@@ -1,7 +1,8 @@
-FROM ghcr.io/harvester57/njsscan:master@sha256:5ac943b6c62c264191378644d5a05e84276bd608cb264fbe25ba0018c439a91f
+FROM ghcr.io/harvester57/njsscan:master@sha256:11859a99297109341588c9eb8e390025d716f09663a894feda38f9f6f3c872fa
 
-LABEL "maintainer"="Ajin Abraham <ajin@opensecurity.in>"
-LABEL "repository"="https://github.com/ajinabraham/njsscan"
-LABEL "homepage"="https://github.com/ajinabraham/njsscan"
+LABEL org.opencontainers.image.authors="Florian Stosse <contact@harvester.fr>"
+LABEL org.opencontainers.image.source="https://github.com/Harvester57/njsscan"
+LABEL org.opencontainers.image.url="https://github.com/Harvester57/njsscan"
+LABEL org.opencontainers.image.licenses="MIT"
 
 ENTRYPOINT [ "python3", "/action/bin/njsscan" ]
